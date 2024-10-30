@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: mq-producer
+    
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    
+    
+rabbitmq:
+  queue:
+    name: gogreen-queue-1
+  exchange:
+    name: gogreen-exchange-1
+  routing:
+    key: test_routing_key
+    
+server:
+  port: 8081
